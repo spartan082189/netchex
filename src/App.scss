@@ -2,6 +2,8 @@
 
 $primaryColor: #16504A;
 $secondaryColor: #7BC26D;
+$green: #8FC8C8;
+$lightGrey: #E8E8E8;
 $white: #FFF;
 
 //Ant Design overrides
@@ -15,6 +17,22 @@ $white: #FFF;
   .ant-menu-item-selected {
     border-bottom: 2px solid $secondaryColor;
     color: $secondaryColor;
+  }
+}
+.ant-layout-header {
+  background: transparent;
+}
+.ant-layout-sider {
+  background: $lightGrey;
+  height: 100%;
+  min-height: 100vh;
+  .anticon {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    font-size: 40px;
+    cursor: pointer;
+    color: $primaryColor;
   }
 }
 #maintenance {
@@ -47,31 +65,46 @@ $white: #FFF;
     color: #FFF;
   }
 }
-.App {
-  text-align: center;
+
+.appContent {
+  background: $white;
+  padding: 25px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.deductionsBar {
+  display: flex;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.backLink {
+  color: $green;
+  flex: auto;
+  font-size: 20px;
+  &:hover {
+    color: $secondaryColor;
+  }
 }
 
-.App-title {
-  font-size: 1.5em;
+.exportToExcel {
+  color: $green;
+  flex: auto;
+  text-align: right;
+  font-size: 20px;
+  &:hover {
+    color: $secondaryColor;
+  }
 }
 
-.App-intro {
-  font-size: large;
+.exportBtn {
+  border: 2px solid $green;
+  padding: 10px;
+  &:hover {
+    border: 2px solid $secondaryColor;
+  }
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+//Filters
+.filterBar {
+  background: $lightGrey;
+  margin: 30px 0;
+  padding: 15px;
 }
