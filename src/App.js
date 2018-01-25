@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Layout, Icon } from 'antd';
 import { withLayout } from './hoc/';
-import { FilterBar } from './components/ActivityHistory';
+import { FilterBar, ActivityList } from './components/ActivityHistory';
 const { Sider, Content } = Layout;
 
 class App extends Component {
@@ -23,6 +23,7 @@ class App extends Component {
             </header>
             <section>
               <FilterBar />
+              <ActivityList />
             </section>
           </Content>
         </Layout>

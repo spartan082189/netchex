@@ -6,7 +6,7 @@ const handleMenuClick = e => {
   console.log('click', e);
 }
 
-const DeductionsDropDown = ({ }) => {
+const DeductionsDropDown = () => {
   const menu = (
     <Menu onClick={handleMenuClick}>
       <Menu.Item key="1">1st menu item</Menu.Item>

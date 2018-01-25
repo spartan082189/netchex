@@ -1,9 +1,11 @@
 import FilterBar from './FilterBar';
-import ResultsView from './ResultsView';
 import DeductionsDropDown from './DeductionsDropDown';
+import ActivityList from './ActivityList';
+import ActivityListItem from './ActivityListItem';
 
 export {
   FilterBar,
-  ResultsView,
-  DeductionsDropDown
+  DeductionsDropDown,
+  ActivityListItem,
+  ActivityList
 }
