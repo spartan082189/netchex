@@ -21,18 +21,18 @@ const getActivityHistory = () => {
       ],
       'PageSize': 10
     })
-  }
+}
 
-  const getActivityFields = () => {
-    return getJSON(`/app/ui/activityhistory/1/activityfield`);
-  }
+const getActivityFields = () => {
+  return getJSON(`/app/ui/activityhistory/1/activityfield`);
+}
 
-  const getActivities = () => {
-    return getJSON(`/app/ui/activityhistory/1/search/0?page=1&_mock_=datasize`);
-  }
+const getActivities = () => {
+  return getJSON(`/app/ui/activityhistory/1/search/0?page=1&_mock_=datasize`);
+}
 
-  export {
-    getActivityHistory,
-    getActivityFields,
-    getActivities
-  }
+export {
+  getActivityHistory,
+  getActivityFields,
+  getActivities
+}

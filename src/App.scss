@@ -6,6 +6,13 @@ $green: #8FC8C8;
 $lightGrey: #E8E8E8;
 $white: #FFF;
 
+//Helpers
+.center-text {
+  text-align: center;
+}
+.loading-state {
+  color: $green;
+}
 //Ant Design overrides
 .ant-menu {
   .ant-menu-item {
@@ -24,7 +31,6 @@ $white: #FFF;
 }
 .ant-layout-sider {
   background: $lightGrey;
-  height: 100%;
   min-height: 100vh;
   .anticon {
     position: absolute;
@@ -107,4 +113,9 @@ $white: #FFF;
   background: $lightGrey;
   margin: 30px 0;
   padding: 15px;
+}
+
+//Activity List Item
+.activityItem {
+  padding: 25px 0;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { getActivities } from '../../api';
 import { ActivityListItem } from './';
+import { Icon } from 'antd';
 
 class ActivityList extends Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class ActivityList extends Component {
   }
 
   setActivities = activities => {
-    return this.setState({activities: activities});
+    return this.setState({ activities: activities });
   }
 
   async componentDidMount() {
@@ -33,12 +34,12 @@ class ActivityList extends Component {
   }
   render() {
     const { activities, loading } = this.state;
-    const mapActivities = activities.map(activity => {
-      return <ActivityListItem activity={activity} />;
+    const mapActivities = activities.map((activity, i) => {
+      return <ActivityListItem activity={activity} key={i} />;
     })
     return (
       <div>
-        {mapActivities}
+        {loading ? <div className='center-text loading-state'> <p>Loading Activities...</p> <Icon spin type='loading' style={{ fontSize: 50 }} /> </div> : mapActivities}
       </div>
     )
   }
