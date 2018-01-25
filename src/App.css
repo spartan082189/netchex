@@ -1,4 +1,38 @@
 @import url(~antd/dist/antd.css);
+.ant-menu .ant-menu-item:hover {
+  border-bottom: 2px solid #7BC26D;
+  color: #7BC26D; }
+
+.ant-menu .ant-menu-item-selected {
+  border-bottom: 2px solid #7BC26D;
+  color: #7BC26D; }
+
+#maintenance {
+  background: #16504A;
+  padding: 10px 0 0 0; }
+  #maintenance .heading {
+    color: #FFF;
+    font-weight: lighter;
+    font-size: 40px;
+    display: inline-block;
+    border-left: 2px solid #366665;
+    vertical-align: middle;
+    padding-left: 25px;
+    margin-bottom: 0; }
+  #maintenance .logo {
+    display: inline-block; }
+  #maintenance .helpSupport {
+    color: #7BC26D;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 15px;
+    text-decoration: none; }
+  #maintenance .maintenanceMenu {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    color: #FFF; }
+
 .App {
   text-align: center; }
 

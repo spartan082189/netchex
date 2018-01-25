@@ -1,5 +1,52 @@
 @import '~antd/dist/antd.css';
 
+$primaryColor: #16504A;
+$secondaryColor: #7BC26D;
+$white: #FFF;
+
+//Ant Design overrides
+.ant-menu {
+  .ant-menu-item {
+    &:hover {
+      border-bottom: 2px solid $secondaryColor;
+      color: $secondaryColor;
+    }
+  }
+  .ant-menu-item-selected {
+    border-bottom: 2px solid $secondaryColor;
+    color: $secondaryColor;
+  }
+}
+#maintenance {
+  background: $primaryColor;
+  padding: 10px 0 0 0;
+  .heading {
+    color: $white;
+    font-weight: lighter;
+    font-size: 40px;
+    display: inline-block;
+    border-left: 2px solid #366665;
+    vertical-align: middle;
+    padding-left: 25px;
+    margin-bottom: 0;
+  }
+  .logo {
+    display: inline-block;
+  }
+  .helpSupport {
+    color: $secondaryColor;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 15px;
+    text-decoration: none;
+  }
+  .maintenanceMenu {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    color: #FFF;
+  }
+}
 .App {
   text-align: center;
 }
